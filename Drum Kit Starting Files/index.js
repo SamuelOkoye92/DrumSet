@@ -1,9 +1,10 @@
-let buttons = document.querySelectorAll("button");
-buttons.addEventListener("click", function(){
-    alert("This is samuel's code");
-});
+let buttons = document.querySelectorAll(".drum");
+let noOfButtons = buttons.length;
+let audio1 = new Audio("sounds/tom-1.mp3");
 
-let buttons = document.querySelectorAll("button");
-buttons.addEventListener("click", function(){
-    alert("This is samuel's code");
-});
+for (let i = 0; i < noOfButtons; i++) {
+        buttons[i].addEventListener("click", function(){
+        audio1.play();
+    });
+    
+}
