@@ -6,10 +6,15 @@ for (let i = 0; i < noOfButtons; i++) {
 
         let buttonInnerHTML = this.innerHTML;
         drumSound(buttonInnerHTML);
+        buttonAnimation(buttonInnerHTML);
    });
 };
 
 
+document.addEventListener('keydown', function(event){
+   drumSound(event.key);
+   buttonAnimation(event.key);
+});
 
 
 function drumSound(sound){
@@ -54,6 +59,16 @@ switch (sound) {
   default: console.log(sound);
 
 };
+};
+
+
+function buttonAnimation(currentKey) {
+let selectedButton = document.querySelector('.'+ currentKey);
+selectedButton.classList.add('pressed');
+
+setTimeout(function(){
+   selectedButton.classList.remove('pressed');
+}, 100);
 };
 
 

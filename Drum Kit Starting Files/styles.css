@@ -60,12 +60,12 @@ background-image: url("./images/tom1.png");
 
 .drum {
   outline: none;
-  border: 10px solid #163b99;
+  border: 10px solid #0c6366;
   font-size: 5rem;
   font-family: 'Arvo', cursive;
   line-height: 2;
   font-weight: 900;
-  color: #163b99;
+  color: #176680;
   text-shadow: 3px 0 #54b3d2;
   border-radius: 15px;
   display: inline-block;
